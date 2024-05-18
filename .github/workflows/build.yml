@@ -80,7 +80,7 @@ jobs:
     - name: Build binary distribution
       run: |
         ./configure
-        make all -j$(nproc)
+        make all -j$(nproc) V=1
     
     - name: Make packages
       run: |
