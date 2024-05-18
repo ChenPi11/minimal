@@ -48,6 +48,8 @@ SYSLINUX_CFG = syslinux.config
 # Dependencies for testing.
 DU := du
 
+CFLAGS := $(CFLAGS) -fno-stack-protector
+
 # Mirrors.
 include mirrors.mk
 BUSYBOX_URL = $(BUSYBOX_MIRROR)/$(BUSYBOX).tar.bz2
